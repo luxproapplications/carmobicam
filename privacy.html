@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<title>CarMobiCam – prywatność</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root { --bg:#1F2024; --card:#2A2C31; --line:#383B42; --text:#F3F3F1; --muted:#A7AAB0; --accent:#FFD102; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 16px 56px; }
+  header { display:flex; align-items:center; gap:14px; margin-bottom:28px; }
+  .mark { width:48px; height:48px; border-radius:12px; background:#17181B; border:2px solid var(--accent); position:relative; flex:none; }
+  .mark::before { content:""; position:absolute; left:50%; top:9px; width:20px; height:20px; margin-left:-10px; border-radius:50%; border:4px solid var(--accent); box-sizing:border-box; }
+  .mark::after { content:""; position:absolute; left:50%; bottom:5px; width:14px; height:12px; margin-left:-7px; background:var(--accent); clip-path:polygon(35% 0,65% 0,100% 100%,0 100%); }
+  .brand { font-size:26px; font-weight:700; letter-spacing:.2px; }
+  .brand span { color:var(--accent); }
+  .sub { color:var(--muted); font-size:14px; margin-top:-2px; }
+  h1 { font-size:28px; line-height:1.25; margin:0 0 8px; }
+  h2 { font-size:19px; margin:32px 0 8px; color:var(--accent); }
+  p, li { color:var(--text); }
+  .muted { color:var(--muted); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px 20px; margin:16px 0; }
+  ul { padding-left:22px; }
+  .card ul { margin:0; }
+  a { color:var(--accent); }
+  nav { display:flex; gap:18px; flex-wrap:wrap; margin-top:36px; padding-top:16px; border-top:1px solid var(--line); font-size:14px; }
+  code { background:#17181B; padding:1px 6px; border-radius:6px; font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark" aria-hidden="true"></div>
+    <div>
+      <div class="brand">CarMobi<span>Cam</span></div>
+      <div class="sub">Rejestrator jazdy na Androida</div>
+    </div>
+  </header>
+  <h1>Polityka prywatności</h1>
+  <p class="muted">Obowiązuje od 16 października 2026 r. · Aplikacja: CarMobiCam (Android, <code>com.luxproapps.carmobicam</code>)</p>
+
+  <div class="card">
+    <strong>W skrócie:</strong> CarMobiCam działa w Twoim telefonie. Nie ma kont, reklam, analityki ani serwerów twórcy.
+    Nagrania i położenie nie są wysyłane do twórcy aplikacji. Jeśli sam włączysz kopię na Google Drive, nagrania trafiają
+    bezpośrednio z telefonu na <strong>Twój</strong> Dysk Google.
+  </div>
+
+  <h2>1. Kto odpowiada za aplikację</h2>
+  <p>Twórca aplikacji CarMobiCam (LuxPro Apps). Kontakt: <a href="mailto:luxproapplications@gmail.com">luxproapplications@gmail.com</a>.</p>
+
+  <h2>2. Jakie dane aplikacja przetwarza – i gdzie</h2>
+  <ul>
+    <li><strong>Obraz z kamery i (opcjonalnie) dźwięk z mikrofonu</strong> – zapisywane jako pliki wideo w pamięci telefonu, w folderze aplikacji.</li>
+    <li><strong>Położenie i prędkość (GPS)</strong> – do napisów na filmie, trasy nagrania (plik GPX), opisu „skąd–dokąd”, warunków automatycznego nagrywania i godzin wschodu/zachodu słońca. Przechowywane w telefonie obok nagrań.</li>
+    <li><strong>Nazwa ulicy i miejscowości</strong> – aby zamienić współrzędne na adres, aplikacja korzysta z usługi geokodowania systemu Android (zwykle dostarczanej przez Google), która otrzymuje wtedy współrzędne. Wynik jest zapisywany tylko na filmie i w telefonie.</li>
+    <li><strong>Urządzenia Bluetooth</strong> – nazwa i adres wybranego przez Ciebie urządzenia (np. radia samochodowego), tylko w ustawieniach aplikacji w telefonie, do automatycznego startu nagrywania.</li>
+    <li><strong>Aplikacja na ekranie</strong> – jeśli ustawisz taki warunek, CarMobiCam sprawdza (za Twoją zgodą „Dostęp do danych o użyciu”), czy wybrana aplikacja, np. nawigacja, jest na ekranie. Te informacje nie są zapisywane ani nigdzie wysyłane.</li>
+    <li><strong>Czujniki i stan telefonu</strong> – ruch (wykrywanie wstrząsu, położenie telefonu), poziom baterii, ładowanie i temperatura – używane na bieżąco w telefonie.</li>
+    <li><strong>Dziennik zdarzeń i statystyki</strong> – zapisywane tylko w telefonie, pomocne przy rozwiązywaniu problemów.</li>
+  </ul>
+  <p>Aplikacja nie zbiera danych o Tobie na serwerach twórcy, nie wyświetla reklam, nie używa narzędzi analitycznych i nie sprzedaje ani nie udostępnia danych.</p>
+
+  <h2>3. Google Drive (opcjonalnie)</h2>
+  <p>Jeśli włączysz wysyłanie na Google Drive, łączysz z aplikacją swoje konto Google. CarMobiCam prosi tylko o uprawnienie
+    <code>drive.file</code> – dostęp wyłącznie do plików, które sama aplikacja utworzyła na Twoim Dysku (folder „CarMobiCam”).
+    Aplikacja nie widzi innych plików na Twoim Dysku.</p>
+  <ul>
+    <li>Nagrania są wysyłane bezpośrednio z telefonu na Twój Dysk Google, razem z nazwą pliku, czasem nagrania, oznaczeniem „zachowane” i opisem miejsca początku i końca nagrania.</li>
+    <li>Aplikacja może, zgodnie z Twoimi ustawieniami, usuwać ze swojego folderu na Dysku starsze nagrania.</li>
+    <li>Logowanie i dostęp obsługują usługi Google Play w Twoim telefonie; twórca aplikacji nie otrzymuje Twojego hasła ani danych z Dysku.</li>
+    <li>Dostęp cofniesz w aplikacji („Rozłącz konto Google”) albo na stronie <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  </ul>
+  <p>Korzystanie przez CarMobiCam z informacji otrzymanych z interfejsów API Google oraz ich przekazywanie do innych aplikacji
+    jest zgodne z <a href="https://developers.google.com/terms/api-services-user-data-policy">Zasadami dotyczącymi danych użytkownika w usługach interfejsów API Google</a>,
+    w tym z wymaganiami dotyczącymi ograniczonego użytkowania (Limited Use).</p>
+
+  <h2>4. Jak długo dane są przechowywane</h2>
+  <p>Tak długo, jak ustawisz w aplikacji (czas przechowywania, limit liczby i miejsca – osobno w telefonie i na Dysku).
+    Nagrania możesz w każdej chwili usunąć ręcznie. Odinstalowanie aplikacji usuwa jej folder z nagraniami; kopie zachowanych
+    nagrań w folderze „Pobrane/CarMobiCam” oraz pliki na Twoim Dysku Google zostają, dopóki sam ich nie usuniesz.</p>
+
+  <h2>5. Uprawnienia</h2>
+  <p>Kamera, mikrofon (opcjonalnie), lokalizacja (także w tle – gdy nagrywanie startuje samo), Bluetooth, powiadomienia,
+    wyświetlanie nad innymi aplikacjami (pasek z podglądem i start nagrywania w tle), dane o użyciu aplikacji (opcjonalnie),
+    internet (adresy i Google Drive). Każde z nich służy wyłącznie opisanym wyżej funkcjom.</p>
+
+  <h2>6. Osoby na nagraniach</h2>
+  <p>Nagrania mogą obejmować inne osoby, pojazdy i tablice rejestracyjne. Za zgodne z prawem korzystanie z nagrań
+    (np. przepisy o ochronie danych osobowych i wizerunku) odpowiada użytkownik aplikacji.</p>
+
+  <h2>7. Dzieci</h2>
+  <p>Aplikacja nie jest przeznaczona dla dzieci i nie zbiera świadomie danych dzieci.</p>
+
+  <h2>8. Zmiany</h2>
+  <p>O zmianach tej polityki poinformujemy na tej stronie, aktualizując datę na górze.</p>
+
+  <h2>English summary</h2>
+  <p class="muted">CarMobiCam is an on-device dashcam app. Video, audio (optional), location and other data stay on the user's
+    phone; the developer operates no servers and receives no user data. If the user enables Google Drive backup, recordings are
+    uploaded directly to the user's own Google Drive using the <code>drive.file</code> scope, which only grants access to files
+    created by the app. CarMobiCam's use and transfer of information received from Google APIs adheres to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+    including the Limited Use requirements. Contact: luxproapplications@gmail.com.</p>
+  <nav>
+    <a href="index.html">Strona główna</a>
+    <a href="privacy.html">Polityka prywatności</a>
+    <a href="mailto:luxproapplications@gmail.com">Kontakt</a>
+  </nav>
+</div>
+</body>
+</html>

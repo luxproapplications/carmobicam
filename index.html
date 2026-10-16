@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<title>CarMobiCam</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root { --bg:#1F2024; --card:#2A2C31; --line:#383B42; --text:#F3F3F1; --muted:#A7AAB0; --accent:#FFD102; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 16px 56px; }
+  header { display:flex; align-items:center; gap:14px; margin-bottom:28px; }
+  .mark { width:48px; height:48px; border-radius:12px; background:#17181B; border:2px solid var(--accent); position:relative; flex:none; }
+  .mark::before { content:""; position:absolute; left:50%; top:9px; width:20px; height:20px; margin-left:-10px; border-radius:50%; border:4px solid var(--accent); box-sizing:border-box; }
+  .mark::after { content:""; position:absolute; left:50%; bottom:5px; width:14px; height:12px; margin-left:-7px; background:var(--accent); clip-path:polygon(35% 0,65% 0,100% 100%,0 100%); }
+  .brand { font-size:26px; font-weight:700; letter-spacing:.2px; }
+  .brand span { color:var(--accent); }
+  .sub { color:var(--muted); font-size:14px; margin-top:-2px; }
+  h1 { font-size:28px; line-height:1.25; margin:0 0 8px; }
+  h2 { font-size:19px; margin:32px 0 8px; color:var(--accent); }
+  p, li { color:var(--text); }
+  .muted { color:var(--muted); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px 20px; margin:16px 0; }
+  ul { padding-left:22px; }
+  .card ul { margin:0; }
+  a { color:var(--accent); }
+  nav { display:flex; gap:18px; flex-wrap:wrap; margin-top:36px; padding-top:16px; border-top:1px solid var(--line); font-size:14px; }
+  code { background:#17181B; padding:1px 6px; border-radius:6px; font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark" aria-hidden="true"></div>
+    <div>
+      <div class="brand">CarMobi<span>Cam</span></div>
+      <div class="sub">Rejestrator jazdy na Androida</div>
+    </div>
+  </header>
+  <h1>Telefon jako kamera samochodowa</h1>
+  <p class="muted">CarMobiCam nagrywa drogę tylną kamerą telefonu – w tle, w plikach po kilka minut, z datą, adresem i prędkością na obrazie.</p>
+
+  <div class="card">
+    <ul>
+      <li>Nagrywanie w tle, także automatycznie (np. po połączeniu z Bluetooth auta albo powyżej ustalonej prędkości).</li>
+      <li>Zachowywanie ważnych nagrań – ręcznie albo samo po wstrząsie (np. zderzeniu).</li>
+      <li>Automatyczne sprzątanie starych nagrań według czasu, liczby i zajętego miejsca.</li>
+      <li>Tryb nocny, tryb oszczędzania baterii i ocena ustawienia kamery.</li>
+      <li>Opcjonalnie: kopia nagrań na <strong>Twoim własnym</strong> Dysku Google.</li>
+    </ul>
+  </div>
+
+  <p>Nagrania i dane o położeniu zostają w Twoim telefonie (i – jeśli tak ustawisz – na Twoim Dysku Google). Twórca aplikacji ich nie otrzymuje. Szczegóły: <a href="privacy.html">polityka prywatności</a>.</p>
+  <p class="muted">Kontakt: <a href="mailto:luxproapplications@gmail.com">luxproapplications@gmail.com</a></p>
+  <nav>
+    <a href="index.html">Strona główna</a>
+    <a href="privacy.html">Polityka prywatności</a>
+    <a href="mailto:luxproapplications@gmail.com">Kontakt</a>
+  </nav>
+</div>
+</body>
+</html>

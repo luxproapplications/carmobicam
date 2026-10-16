@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<title>CarMobiCam – warunki</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root { --bg:#1F2024; --card:#2A2C31; --line:#383B42; --text:#F3F3F1; --muted:#A7AAB0; --accent:#FFD102; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 16px 56px; }
+  header { display:flex; align-items:center; gap:14px; margin-bottom:28px; }
+  .mark { width:48px; height:48px; border-radius:12px; background:#17181B; border:2px solid var(--accent); position:relative; flex:none; }
+  .mark::before { content:""; position:absolute; left:50%; top:9px; width:20px; height:20px; margin-left:-10px; border-radius:50%; border:4px solid var(--accent); box-sizing:border-box; }
+  .mark::after { content:""; position:absolute; left:50%; bottom:5px; width:14px; height:12px; margin-left:-7px; background:var(--accent); clip-path:polygon(35% 0,65% 0,100% 100%,0 100%); }
+  .brand { font-size:26px; font-weight:700; letter-spacing:.2px; }
+  .brand span { color:var(--accent); }
+  .sub { color:var(--muted); font-size:14px; margin-top:-2px; }
+  h1 { font-size:28px; line-height:1.25; margin:0 0 8px; }
+  h2 { font-size:19px; margin:32px 0 8px; color:var(--accent); }
+  p, li { color:var(--text); }
+  .muted { color:var(--muted); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px 20px; margin:16px 0; }
+  ul { padding-left:22px; }
+  .card ul { margin:0; }
+  a { color:var(--accent); }
+  nav { display:flex; gap:18px; flex-wrap:wrap; margin-top:36px; padding-top:16px; border-top:1px solid var(--line); font-size:14px; }
+  code { background:#17181B; padding:1px 6px; border-radius:6px; font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark" aria-hidden="true"></div>
+    <div>
+      <div class="brand">CarMobi<span>Cam</span></div>
+      <div class="sub">Rejestrator jazdy na Androida</div>
+    </div>
+  </header>
+  <h1>Warunki korzystania</h1>
+  <p class="muted">Obowiązują od 16 października 2026 r. · Aplikacja: CarMobiCam (Android, <code>com.luxproapps.carmobicam</code>)</p>
+
+  <div class="card">
+    <strong>W skrócie:</strong> CarMobiCam jest bezpłatnym narzędziem udostępnianym „tak, jak jest”. Pomaga nagrywać jazdę,
+    ale nie gwarantuje, że nagra każde zdarzenie. Za bezpieczną jazdę i zgodne z prawem korzystanie z nagrań odpowiadasz Ty.
+  </div>
+
+  <h2>1. Akceptacja</h2>
+  <p>Instalując lub używając aplikacji CarMobiCam, akceptujesz te warunki. Jeśli się z nimi nie zgadzasz, nie korzystaj z aplikacji.</p>
+
+  <h2>2. Co oferuje aplikacja</h2>
+  <p>CarMobiCam zamienia telefon w kamerę samochodową: nagrywa obraz (i opcjonalnie dźwięk), dodaje na filmie datę, położenie
+    i prędkość, przechowuje i sprząta nagrania w telefonie oraz – jeśli to włączysz – wysyła je na Twój Dysk Google.
+    Funkcje mogą się zmieniać w kolejnych wersjach.</p>
+
+  <h2>3. Bez gwarancji</h2>
+  <ul>
+    <li>Aplikacja jest udostępniana „tak, jak jest” (<em>as is</em>), bez gwarancji nieprzerwanego lub bezbłędnego działania.</li>
+    <li>Nagranie może nie powstać albo być niepełne – np. z powodu ustawień lub ograniczeń telefonu, systemu Android, braku miejsca,
+      niskiej baterii, przegrzania, słabego światła, zasłoniętego obiektywu czy działania innych aplikacji.</li>
+    <li>Napisy na filmie (adres, prędkość, czas) pochodzą z GPS, usług systemu i zegara telefonu i mogą być niedokładne.
+      Nie traktuj ich jako pomiaru urzędowego.</li>
+    <li>Automatyczne funkcje (start i stop nagrywania, wykrywanie wstrząsu, sprzątanie, wysyłanie na Dysk) działają według
+      Twoich ustawień i mogą zadziałać inaczej, niż oczekujesz. Ważne nagrania zachowuj (🔒) i kopiuj.</li>
+  </ul>
+
+  <h2>4. Bezpieczeństwo w czasie jazdy</h2>
+  <p>Nie obsługuj telefonu podczas prowadzenia pojazdu. Mocuj telefon tak, aby nie ograniczał widoczności i nie stanowił
+    zagrożenia, zgodnie z przepisami ruchu drogowego.</p>
+
+  <h2>5. Twoja odpowiedzialność za nagrania</h2>
+  <p>Nagrania mogą obejmować inne osoby, pojazdy i tablice rejestracyjne. Korzystając z nich – zwłaszcza udostępniając
+    je lub publikując – odpowiadasz za przestrzeganie prawa, w tym przepisów o ochronie danych osobowych (RODO) i wizerunku.</p>
+
+  <h2>6. Usługi Google</h2>
+  <p>Wysyłanie na Google Drive korzysta z Twojego konta Google i podlega warunkom Google. Miejsce na Dysku, transfer danych
+    (także mobilnych) i ich koszty zależą od Twojego konta i operatora. Twórca aplikacji nie odpowiada za działanie usług Google.</p>
+
+  <h2>7. Ograniczenie odpowiedzialności</h2>
+  <p>W najszerszym zakresie dozwolonym przez prawo twórca aplikacji nie odpowiada za szkody wynikające z korzystania z aplikacji
+    lub niemożności korzystania z niej, w tym za utratę nagrań lub danych, zużycie baterii czy transferu. Nie wyłącza to
+    odpowiedzialności, której zgodnie z prawem nie można wyłączyć, ani Twoich uprawnień jako konsumenta.</p>
+
+  <h2>8. Prywatność</h2>
+  <p>Zasady przetwarzania danych opisuje <a href="privacy.html">polityka prywatności</a>.</p>
+
+  <h2>9. Zmiany i kontakt</h2>
+  <p>Warunki mogą się zmienić – aktualna wersja i data obowiązywania są zawsze na tej stronie.
+    Pytania: <a href="mailto:luxproapplications@gmail.com">luxproapplications@gmail.com</a>.</p>
+  <nav>
+    <a href="index.html">Strona główna</a>
+    <a href="privacy.html">Polityka prywatności</a>
+    <a href="terms.html">Warunki korzystania</a>
+    <a href="mailto:luxproapplications@gmail.com">Kontakt</a>
+  </nav>
+</div>
+</body>
+</html>
