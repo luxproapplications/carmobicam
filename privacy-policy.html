@@ -21,7 +21,7 @@
 
 <section id="pl">
 <h1>Car<span>MobiCam</span> – Polityka prywatności</h1>
-<p class="muted">Wydawca: Lux Pro Applications · Ostatnia aktualizacja: 20 października 2026</p>
+<p class="muted">Wydawca: Lux Pro Applications · Ostatnia aktualizacja: 12 listopada 2026 (wersja 3)</p>
 
 <p>CarMobiCam to aplikacja na Androida, która zamienia telefon w wideorejestrator. Szanujemy Twoją prywatność: <b>nie mamy własnych serwerów, nie zbieramy Twoich danych, nie wyświetlamy reklam i nie używamy narzędzi analitycznych.</b> Wszystko, co nagrywasz, zostaje na Twoim telefonie, chyba że sam włączysz wysyłanie na własny Dysk Google.</p>
 
@@ -34,12 +34,17 @@
 <li><b>Wyświetlanie nad innymi aplikacjami</b> – służy do pływającego paska sterowania i wygaszania ekranu.</li>
 <li><b>Analiza klatek z kamery na telefonie</b> – do oceny kadru oraz, w nocy, do doboru ekspozycji tak, aby tablice rejestracyjne pozostały czytelne (aplikacja od czasu do czasu próbuje odczytać tablicę na pojedynczej klatce). Rozpoznawanie działa wyłącznie na telefonie; odczytany tekst nie jest zapisywany, rejestrowany ani wysyłany.</li>
 <li><b>Czujnik grawitacji</b> – do opcjonalnego automatycznego poziomowania obrazu w nagraniu; odczyty nie są zapisywane.</li>
+<li><b>Informacje o sesji multimedialnej</b> (opcjonalny „Dostęp do powiadomień”) – tytuł, wykonawca, okładka i stan odtwarzacza muzyki, tylko po to, by pokazać je na pasku i sterować odtwarzaniem. Zostają w telefonie.</li>
+<li><b>Lista zainstalowanych aplikacji</b> – do wyboru aplikacji (np. nawigacji, muzyki), które mają się uruchamiać z nagrywaniem. Zostaje w telefonie.</li>
+<li><b>Usługa dostępności (opcjonalna)</b> – służy wyłącznie do zamykania aplikacji uruchomionych przez CarMobiCam (ekran „Informacje o aplikacji” w ustawieniach systemu). Nie odczytuje treści ekranu, haseł ani wpisywanego tekstu.</li>
+<li><b>Czytanie powiadomień na głos (opcjonalnie)</b> – robi to syntezator mowy systemu Android; tekst nie jest wysyłany do nas.</li>
+<li><b>Miniatura na ekranie blokady</b> – podgląd paska może być widoczny na ekranie blokady; można to wyłączyć w ustawieniach.</li>
 <li><b>Ustawienia aplikacji</b> – zapisane lokalnie.</li>
 </ul>
 
 <h2>2. Czego nie robimy</h2>
 <ul>
-<li>Nie wysyłamy Twoich nagrań, lokalizacji ani ustawień na nasze serwery – nie mamy ich.</li>
+<li>Nie wysyłamy Twoich nagrań, lokalizacji ani ustawień na nasze serwery – nie mamy ich. Jedyny wyjątek techniczny to opcjonalne sprawdzanie limitu prędkości (patrz niżej), które wysyła same współrzędne do publicznej usługi OpenStreetMap.</li>
 <li>Nie sprzedajemy ani nie udostępniamy danych osobom trzecim.</li>
 <li>Nie wyświetlamy reklam i nie profilujemy użytkowników.</li>
 </ul>
@@ -47,6 +52,7 @@
 <h2>3. Usługi zewnętrzne, z których aplikacja może korzystać</h2>
 <ul>
 <li><b>Nazwa ulicy (Geocoder Androida).</b> Aby zamienić współrzędne na nazwę ulicy, aplikacja używa usługi wbudowanej w system Android (zwykle dostarczanej przez Google). Współrzędne są wtedy przesyłane do tej usługi. Możesz to wyłączyć w ustawieniach (opcja nazwy ulicy/położenia na filmie). Wtedy napis na filmie pokaże współrzędne albo nic.</li>
+<li><b>Limity prędkości (OpenStreetMap Overpass, opcjonalnie).</b> Gdy włączysz znak ograniczenia prędkości, bieżące współrzędne (bez nagrań i identyfikatorów) są wysyłane do publicznych serwerów Overpass (overpass-api.de, overpass.kumi.systems), aby sprawdzić drogę i jej limit. Gdy w danych brakuje limitu, aplikacja może go oszacować lokalnie. Możesz to wyłączyć w ustawieniach.</li>
 <li><b>Dysk Google (opcjonalnie).</b> Jeśli włączysz wysyłanie, logujesz się własnym kontem Google. Aplikacja ma dostęp tylko do plików, które sama utworzyła (zakres <code>drive.file</code>), i zapisuje je na Twoim Dysku. Możesz w każdej chwili wylogować się w aplikacji lub cofnąć dostęp na stronie konta Google. Zasady Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</li>
 <li><b>Mapa trasy w odtwarzaczu (OpenStreetMap).</b> Kafelki mapy pobierane są z serwerów OpenStreetMap, które widzą m.in. Twój adres IP i obszar mapy. Zasady: <a href="https://osmfoundation.org/wiki/Privacy_Policy">osmfoundation.org/wiki/Privacy_Policy</a>.</li>
 </ul>
@@ -71,7 +77,7 @@
 
 <section id="en">
 <h1>Car<span>MobiCam</span> – Privacy Policy</h1>
-<p class="muted">Publisher: Lux Pro Applications · Last updated: 20 October 2026</p>
+<p class="muted">Publisher: Lux Pro Applications · Last updated: 12 November 2026 (version 3)</p>
 
 <p>CarMobiCam is an Android app that turns your phone into a dashcam. We respect your privacy: <b>we run no servers of our own, we do not collect your data, we show no ads and use no analytics.</b> Everything you record stays on your phone unless you choose to upload it to your own Google Drive.</p>
 
@@ -84,12 +90,17 @@
 <li><b>Display over other apps</b> – used for the floating control bar and screen dimming.</li>
 <li><b>Analysis of camera frames on the phone</b> – to check the framing and, at night, to adjust exposure so that licence plates stay legible (the app tries to read a plate on a single frame from time to time). Recognition runs only on the phone; the text read is not stored, logged or sent anywhere.</li>
 <li><b>Gravity sensor</b> – for the optional auto-leveling of the image in the recording; readings are not stored.</li>
+<li><b>Media session info</b> (optional “Notification access”) – the title, artist, cover and state of your music player, only to show them on the bar and control playback. Stays on the phone.</li>
+<li><b>List of installed apps</b> – to pick the apps (e.g. navigation, music) that should start with recording. Stays on the phone.</li>
+<li><b>Accessibility service (optional)</b> – used only to close apps launched by CarMobiCam (the “App info” screen in system settings). It does not read screen content, passwords or typed text.</li>
+<li><b>Reading notifications aloud (optional)</b> – done by the Android system text-to-speech engine; the text is not sent to us.</li>
+<li><b>Lock-screen thumbnail</b> – the bar preview may be visible on the lock screen; this can be turned off in the settings.</li>
 <li><b>App settings</b> – stored locally.</li>
 </ul>
 
 <h2>2. What we do not do</h2>
 <ul>
-<li>We do not send your recordings, location or settings to any server of ours – we have none.</li>
+<li>We do not send your recordings, location or settings to any server of ours – we have none. The only technical exception is the optional speed-limit lookup (see below), which sends just the coordinates to a public OpenStreetMap service.</li>
 <li>We do not sell or share your data with third parties.</li>
 <li>We show no ads and do not profile users.</li>
 </ul>
@@ -97,6 +108,7 @@
 <h2>3. Third-party services the app may use</h2>
 <ul>
 <li><b>Street names (Android Geocoder).</b> To turn coordinates into a street name the app uses the service built into Android (usually provided by Google); your coordinates are sent to that service. You can turn this off in the settings (the caption then shows coordinates or nothing).</li>
+<li><b>Speed limits (OpenStreetMap Overpass, optional).</b> If you enable the speed-limit sign, your current coordinates (no recordings or identifiers) are sent to the public Overpass servers (overpass-api.de, overpass.kumi.systems) to look up the road and its limit. When the data has no limit, the app may estimate it locally. You can turn this off in the settings.</li>
 <li><b>Google Drive (optional).</b> If you enable upload, you sign in with your own Google account. The app can access only files it created itself (the <code>drive.file</code> scope) and saves them to your Drive. You can sign out in the app or revoke access in your Google account at any time. Google's policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</li>
 <li><b>Route map in the player (OpenStreetMap).</b> Map tiles are loaded from OpenStreetMap servers, which can see your IP address and the map area. Policy: <a href="https://osmfoundation.org/wiki/Privacy_Policy">osmfoundation.org/wiki/Privacy_Policy</a>.</li>
 </ul>
