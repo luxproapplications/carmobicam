@@ -38,11 +38,11 @@
     </div>
   </header>
   <h1>Polityka prywatności</h1>
-  <p class="muted">Obowiązuje od 16 października 2026 r. · Aplikacja: CarMobiCam (Android, <code>com.luxproapps.carmobicam</code>)</p>
+  <p class="muted">Obowiązuje od 12 listopada 2026 r. (wersja 3) · Aplikacja: CarMobiCam (Android, <code>com.luxproapps.carmobicam</code>)</p>
 
   <div class="card">
     <strong>W skrócie:</strong> CarMobiCam działa w Twoim telefonie. Nie ma kont, reklam, analityki ani serwerów twórcy.
-    Nagrania i położenie nie są wysyłane do twórcy aplikacji. Jeśli sam włączysz kopię na Google Drive, nagrania trafiają
+    Nagrania i położenie nie są wysyłane do twórcy aplikacji (jedyny wyjątek: opcjonalne sprawdzanie limitu prędkości, opisane niżej). Jeśli sam włączysz kopię na Google Drive, nagrania trafiają
     bezpośrednio z telefonu na <strong>Twój</strong> Dysk Google.
   </div>
 
@@ -58,6 +58,11 @@
     <li><strong>Aplikacja na ekranie</strong> – jeśli ustawisz taki warunek, CarMobiCam sprawdza (za Twoją zgodą „Dostęp do danych o użyciu”), czy wybrana aplikacja, np. nawigacja, jest na ekranie. Te informacje nie są zapisywane ani nigdzie wysyłane.</li>
     <li><strong>Czujniki i stan telefonu</strong> – ruch (wykrywanie wstrząsu, położenie telefonu), poziom baterii, ładowanie i temperatura – używane na bieżąco w telefonie.</li>
     <li><strong>Dziennik zdarzeń i statystyki</strong> – zapisywane tylko w telefonie, pomocne przy rozwiązywaniu problemów.</li>
+    <li><strong>Limity prędkości (opcjonalnie)</strong> – gdy włączysz znak ograniczenia prędkości, aplikacja wysyła bieżące współrzędne (bez nagrań, bez identyfikatorów urządzenia lub konta) do publicznych serwerów OpenStreetMap Overpass (<code>overpass-api.de</code>, <code>overpass.kumi.systems</code>), aby sprawdzić drogę i jej limit. Odpowiedź nie jest zapisywana na serwerach twórcy. Jeśli w danych brakuje limitu, aplikacja może go oszacować lokalnie na podstawie rodzaju drogi. Funkcję można wyłączyć w ustawieniach.</li>
+    <li><strong>Muzyka i aplikacje (opcjonalnie)</strong> – za Twoją zgodą („Dostęp do powiadomień”) aplikacja odczytuje z odtwarzacza informacje o sesji multimedialnej (tytuł, wykonawca, okładka, stan) wyłącznie po to, by pokazać je na pasku i sterować odtwarzaniem. Lista zainstalowanych aplikacji służy do wyboru aplikacji, które mają się uruchamiać z nagrywaniem. Dane te zostają w telefonie.</li>
+    <li><strong>Usługa dostępności (opcjonalnie)</strong> – jeśli ją włączysz, służy wyłącznie do zamykania aplikacji uruchomionych przez CarMobiCam (przez ekran „Informacje o aplikacji” w ustawieniach systemu). Nie odczytuje ani nie zapisuje treści ekranu, haseł ani wpisywanego tekstu i działa tylko w ustawieniach systemu.</li>
+    <li><strong>Czytanie powiadomień na głos (opcjonalnie)</strong> – komunikaty aplikacji odczytuje syntezator mowy zainstalowany w systemie Android; tekst komunikatów nie jest wysyłany do twórcy.</li>
+    <li><strong>Ekran blokady i nakładka</strong> – pasek nagrywania może wyświetlać się nad innymi aplikacjami, a miniatura podglądu może być widoczna na ekranie blokady; możesz to wyłączyć w ustawieniach.</li>
   </ul>
   <p>Aplikacja nie zbiera danych o Tobie na serwerach twórcy, nie wyświetla reklam, nie używa narzędzi analitycznych i nie sprzedaje ani nie udostępnia danych.</p>
 
@@ -83,7 +88,7 @@
   <h2>5. Uprawnienia</h2>
   <p>Kamera, mikrofon (opcjonalnie), lokalizacja (także w tle – gdy nagrywanie startuje samo), Bluetooth, powiadomienia,
     wyświetlanie nad innymi aplikacjami (pasek z podglądem i start nagrywania w tle), dane o użyciu aplikacji (opcjonalnie),
-    internet (adresy i Google Drive). Każde z nich służy wyłącznie opisanym wyżej funkcjom.</p>
+    internet (adresy, limity prędkości i Google Drive), dostęp do powiadomień (opcjonalnie – sterowanie muzyką), lista aplikacji i usługa dostępności (opcjonalnie – uruchamianie i zamykanie wybranych aplikacji). Każde z nich służy wyłącznie opisanym wyżej funkcjom.</p>
 
   <h2>6. Osoby na nagraniach</h2>
   <p>Nagrania mogą obejmować inne osoby, pojazdy i tablice rejestracyjne. Za zgodne z prawem korzystanie z nagrań
@@ -101,7 +106,7 @@
     uploaded directly to the user's own Google Drive using the <code>drive.file</code> scope, which only grants access to files
     created by the app. CarMobiCam's use and transfer of information received from Google APIs adheres to the
     <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
-    including the Limited Use requirements. Contact: luxproapplications@gmail.com.</p>
+    including the Limited Use requirements. If the optional speed-limit sign is enabled, only the current coordinates are sent to the public OpenStreetMap Overpass servers (overpass-api.de, overpass.kumi.systems) to look up the road; no recordings or identifiers are sent. Optional notification access is used only to show and control the music player on the device, the optional accessibility service only closes apps launched by CarMobiCam, and text-to-speech is performed by the Android system engine. Version 3, 12 November 2026. Contact: luxproapplications@gmail.com.</p>
   <nav>
     <a href="index.html">Strona główna</a>
     <a href="privacy.html">Polityka prywatności</a>
